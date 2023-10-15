@@ -68,18 +68,30 @@ header a {
 }
 
 /* new workout form */
-label, input {
+/* Center the form within the left one-third of the screen */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 33%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+label,
+input {
   display: block;
 }
+
 input {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 100%; /* Allow the input to take full width within the form */
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 form button {
   background: var(--primary);
   border: 0;
@@ -89,6 +101,7 @@ form button {
   border-radius: 4px;
   cursor: pointer;
 }
+
 div.error {
   padding: 10px;
   background: #ffefef;

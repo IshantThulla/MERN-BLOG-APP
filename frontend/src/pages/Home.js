@@ -5,7 +5,7 @@ import { useBlogsContext } from '../hooks/useBlogsContext'
 //components
 
 import BlogDetails from '../components/BlogDetails'
-import BlogForm from '../components/BlogForm'
+
 
 const Home = () => {
 
@@ -29,7 +29,6 @@ const Home = () => {
                     <BlogDetails key={blog._id} blog={blog} />
                 ))}
             </div>
-            <BlogForm/>
         </div>
     )
 }
